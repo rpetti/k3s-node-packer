@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apk add --no-cache ca-certificates curl nfs-utils cloud-init
+apk add --no-cache ca-certificates curl nfs-utils cloud-init cni-plugins iptables fuse-overlayfs
 setup-cloud-init
 
 sed -ie '/^default_kernel_opts/s/"$/ cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory"/' /etc/update-extlinux.conf
