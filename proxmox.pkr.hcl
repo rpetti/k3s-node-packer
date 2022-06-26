@@ -22,7 +22,7 @@ source "proxmox-iso" "k3s-node" {
     disks {
         storage_pool = var.proxmox_storage_pool
         storage_pool_type = var.proxmox_storage_pool_type
-        disk_size = "16G"
+        disk_size = "32G"
         format = "raw"
     }
     boot_wait = "20s"
