@@ -5,7 +5,8 @@ setup-cloud-init
 
 sed -ie '/^default_kernel_opts/s/"$/ cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory"/' /etc/update-extlinux.conf
 update-extlinux
-echo "cgroup /sys/fs/cgroup cgroup defaults 0 0" >> /etc/fstab
+#echo "cgroup /sys/fs/cgroup cgroup defaults 0 0" >> /etc/fstab
+echo 'rc_cgroup_mode="unified"' >> /etc/rc.conf
 
 cat > /etc/cgconfig.conf <<EOF
 mount {
