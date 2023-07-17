@@ -28,9 +28,9 @@ variable "K3S_TOKEN" {
 }
 variable "iso_url" {
     type = string
-    default = "https://dl-cdn.alpinelinux.org/alpine/v3.16/releases/x86_64/alpine-standard-3.16.4-x86_64.iso"
+    default = "https://dl-cdn.alpinelinux.org/alpine/v3.18/releases/x86_64/alpine-standard-3.18.2-x86_64.iso"
 } 
 variable "iso_checksum" {
     type = string
-    default = "43a02025d57d30d4ed52515479270bd85989753225110da3e0305d45a1e935b8"
+    default = "513dfc3c0c516b803095cd829df72cea956757316247584f0f2ddde7e5b0262f"
 }
